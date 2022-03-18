@@ -1,0 +1,580 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-top: 40vh;
+    height: 60vh;
+    width: 100%;
+}
+
+.titre {
+    font-size: 550%;
+}
+.image {
+    position: relative;
+    transition: all ease-in-out .5s;
+}
+.grandtitre {
+    font-size: 200%;
+}
+.textAP {
+    font-size: 120%;
+}
+.soustitre {
+    font-size: 250%;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+
+.titreStage {
+    font-size: 350%;
+}
+
+.text1 {
+    position: absolute;
+    text-align: center;
+    font-size: 120%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 250px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+.card .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#505050, #333333);
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.card:hover .additional {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    margin-left: -55px;
+    float: left;
+}
+
+.card .additional .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -57px;
+    height: 80%;
+    border-left: 2px solid #fff;
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+    top: 85%;
+}
+
+.card .additional .user-card img {
+    top: 50%;
+}
+
+.card .additional .more-info {
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+}
+
+.card .additional .more-info h1 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.card.green .additional .more-info h1 {
+    color: #224C36;
+}
+
+.card .additional .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.card.green .additional .coords {
+    color: #325C46;
+}
+
+.card .additional .coords span + span {
+    float: right;
+}
+
+.card .additional .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+}
+
+.card.green .additional .stats {
+    color: #325C46;
+}
+
+.card .additional .stats > div {
+    flex: 1;
+    text-align: center;
+}
+
+.card .additional .stats i {
+    display: block;
+}
+
+.card .additional .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+    font-size: 2.5rem;
+}
+
+.card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+}
+
+
+.imgcomptence {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textcompetence {
+    color: #ffffff;
+}
+
+.carte {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #333333;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+}
+
+.progress {
+    height: 20px;
+    border-radius: 20px;
+
+}
+
+.progress .skill .val {
+    float: right;
+    font-style: normal;
+    margin: 0 20px 0 0;
+}
+
+span {
+
+    display: block;
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    text-align: left;
+    color: #333333;
+    width: 0;
+    border-radius: 20px;
+    transition-duration: 3s;
+}
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-2 {
+    transition-delay: .3s;
+}
+
+.reveal-3 {
+    transition-delay: .2s;
+}
+
+.titlereveal {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.title-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}
+
+.row.carte2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stage {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4.8%;
+}
+
+.barre {
+    position: relative;
+}
+.barre::after {
+    content: '';
+    position: absolute;
+    right: -13%;
+    top: 0;
+    background-color: black;
+    height: 100%;
+    width: 1px;
+}
+@media screen and (max-width: 991px) {
+    .img {
+        padding-bottom: 5%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .barre::after {
+        content: '';
+        position: absolute;
+        right: -13%;
+        top: -36%;
+        background-color: black;
+        height: 123%;
+        width: 1px;
+    }
+  }
+.carte2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.atelier {
+    padding: 360px 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+.apcours {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.tailleImgAp {
+    width: 40%;
+    height: 40%;
+    padding: 20px 0;
+    transition: 0.4s;
+}
+.tailleImgAp:hover {
+    width: 42%;
+}
+.lienAP {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+.lienAP:hover {
+    color: #579575;
+    opacity: 1;
+}
+.apTitre {
+    padding-bottom: 20px;
+}
+.resultatAp1 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.parcourScolaire {
+    padding-top: 360px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.competence {
+    padding-top: 360px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.experience {
+    padding-bottom: 100px;
+}
+
+.lienStage:hover {
+    color: #579575;
+}
+.lienStage {
+    color: #000000;
+}
+
+.lienRetour:hover {
+    color: #ffffff;
+}
+
+.lienRetour {
+    color: #000000;
+}
+
+.boutonRetour {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.stageTitre {
+    padding-left: 75px;
+    padding-top: 50px;
+}
+.titreStageLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.semaineStage {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stageDecalage{
+    padding-bottom: 50px;
+}
+
+.semaineCinq {
+    display: flex;
+    justify-content: center;
+}
+
+.titreCenter {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bordimg {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.photoInp {
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.inpImg {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+.photolego {
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.legoImg {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.context {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.apPageTitre {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.voitureImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.tailleDivAP {
+    width: 35%;
+    height: 35%;
+    transition: 0.4s;
+}
+
+.tailleDivAP:hover {
+    width: 36%;
+    height: 36%;
+}
+.tailleDivAPgsb {
+    width: 35%;
+    height: 36%;
+}
+.imgOmbre {
+    border-radius: 30px;
+}
+.sp1 {
+    display: flex;
+    justify-content: center;
+}
+.spContext {
+    margin: 150px 150px 50px 150px;
+}
+.listeSP1 {
+    margin-left: 20px;
+    line-height: 2.5;
+}
+.sp1Img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgSP {
+    width: 70%;
+}
+.liNav {
+    list-style: none;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #579575;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #579575;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
