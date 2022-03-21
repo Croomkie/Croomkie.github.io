@@ -523,7 +523,8 @@ span {
 }
 .sp1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .spContext {
     margin: 150px 150px 50px 150px;
@@ -577,4 +578,9 @@ span {
 
 .nav-link-ltr:hover::before {
     width: 100%;
+}
+.imgGitSp {
+    width: 70%;
+    height: 70%;
+    margin: auto;
 }
