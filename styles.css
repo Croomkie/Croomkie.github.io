@@ -449,6 +449,10 @@ span {
     display: flex;
     justify-content: center;
 }
+.mentionDeploi {
+    width: 35%;
+    height: 35%;
+}
 
 .titreCenter {
     padding-top: 50px;
